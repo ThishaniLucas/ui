@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Properties</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet" >
+  </head>
+ 
+  <body>
+  <!-- Property Description -->
+  	<div class="panel panel-info" id="property_panel">
+  		<div class="panel-heading"><h5> Wild Sans</h5></div>
+  		<div class="panel-body">
+  			<div class="row">
+  				<div class="col-md-3">
+  					<a href="#" class="thumbnail"><img src="./img/wildsands.jpg" height="50%" width="50%" /></a>
+  				</div>
+  				<div class="col-md-6">
+  					<p>The Villa offers a spectacular ocean view and easy access to the beach, which is fronted by a cool cluster of coconut palms. The villa provides comfortable living conditions in a rustic setting that combines the elements of the earth in its construction. The shaded pool in the garden provides the ideal centre of attraction and sunsets are best enjoyed on the secluded beach.</p>
+  				</div>
+  				<div class="col-md-3">
+  					<h1 style="color:red;" align="center">Prices From</h1>
+  					<h3 style="color: red" align="center">$450</h3>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="panel-footer">
+  			<input type="button" class="btn btn-lg btn-primary" value="Book now" onclick="document.getElementById('form_container').style.display='block';$('html, body').animate({
+    scrollTop: $('#form_container').offset().top
+}, 1000);this.disabled=true;" />
+  		</div>
+  	</div>
+  	<!-- Property Description ends here -->
+
+  	<!-- Booking Form -->
+  	<div align="center" id="bookform">
+
+      <div class="panel panel-warning" id="form_container" style="display: none;">
+      <div class="panel-heading">
+          <h2> Booking Form </h2>
+      </div>
+      <div class="panel-body">
+         <form class="form-horizontal">  
+                            
+              <div class="form-group">
+                <label for="checkIn" class="col-sm-2 control-label">Check In</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="checkIn" placeholder="Check In" >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkOut" class="col-sm-2 control-label">Check Out</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="checkOut" placeholder="Check Out" >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="numAdults" class="col-sm-2 control-label">No.of Adults</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="numAdults" name ="numAdults" placeholder="No.of Adults" >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="numChild" class="col-sm-2 control-label">No.of Children</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="numChild" name ="numChild" placeholder="No.of Children" >
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" align="right">
+                  <button type="button" class="btn btn-warning" onclick="document.getElementById('form_container2').style.display='block';$('html, body').animate({
+    scrollTop: $('#form_container2').offset().top
+}, 1000);">Submit</button>
+                </div>
+              </div>
+      </form>        
+      </div>
+
+   	 </div>
+
+	</div>
+	<!-- Booking Form ends here -->
+	<div align="center">
+		<div class="panel panel-warning" id="form_container2" style="display: none;" align="center">
+		<div class="panel-heading">
+			<h5> Booking Information </h5>
+		</div>
+		<div class="panel-body">
+			<label>Booking Dates : 2/2/2016 - 4/2/2016 </label><br />
+			<label> No of Adults : 2 </label><br />
+			<label>No of Childs : 3</label><br />
+		</div>
+	</div>		
+	</div>
+	
+    <script type="text/javascript" src="./script/main.js"></script>
+    <script src="jquery/jquery-2.1.4.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
